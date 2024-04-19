@@ -1,5 +1,5 @@
-def call(){
+def call(Map config = [:]){
 
-  sh "echo hello world " 
+  sh "echo hello ${config.name} today is ${config.dayOfWeek}  " 
   
 }
